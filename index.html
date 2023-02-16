@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- start Quiz button -->
+    <div class="start-btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info-box">
+        <div class="info-title"><span>Rules:</span></div>
+        <div class="info-list">
+            <div class="info">* You will have only <span>60 seconds</span> per each question.</div>
+            <div class="info">* Once you select your answer, it can't be undone.</div>
+            <div class="info">* Timer will be deducted after you select a wrong option.</div>
+            <div class="info">* Once the timer stops, you can't select any option.</div>
+            <div class="info">* You can't exit from Quiz while you're playing.</div>
+            <div class="info">* You will get points from your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz-box">
+        <header>
+            <div class="title">Quiz</div>
+            <div class="timer">
+                <div class="time-left">Time Left</div>
+                <div class="timer-sec">60</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option-list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result-box">
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <form>
+            <div class="input">
+                <label for="initials"></label>
+                <input type="text" name="initials" id="initials" placeholder="name">
+            </div>
+            <div id="message"></div>
+            <button id="submit-button">Submit</button>
+        </form>
+        <div class="score">
+            <h2 class="high-score">Last Highscore</h2>
+                <p><strong>Initials:</strong><span id="user-initial"></span></p>
+                <p><strong>Score:</strong><span id="user-score"></span></p>
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
