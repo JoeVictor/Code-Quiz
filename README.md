@@ -21,7 +21,7 @@ that it's working as it should be.
 
 ## 📝 Link for the live-version of the project
  
-https://joevictor.github.io/challenge1/
+https://joevictor.github.io/Code-Quiz/
 
 ![Project screenshot of the website](./Assets/Screenshot_20230216_015624.png)
 ![Project screenshot of the website](./Assets/Screenshot_20230216_015658.png)
